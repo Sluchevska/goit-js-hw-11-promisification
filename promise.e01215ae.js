@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"qhm1":[function(require,module,exports) {
 const t=(t,n)=>Math.floor(Math.random()*(n-t+1)+t),n=n=>{const a=t(200,500);return new Promise((t,o)=>{setTimeout(()=>{Math.random()>.3?t(n.id,a):o(n.id)},a)})},a=(t,n)=>{console.log(`Transaction ${t} processed in ${n}ms`)},o=t=>{console.warn(`Error processing transaction ${t}. Please try again later.`)};n({id:70,amount:150}).then(a).catch(o),n({id:71,amount:230}).then(a).catch(o),n({id:72,amount:75}).then(a).catch(o),n({id:73,amount:100}).then(a).catch(o);
+},{}],"F3LX":[function(require,module,exports) {
+const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0},{name:"Lux",active:!1}],a=(e,a)=>new Promise(n=>{n(e.map(e=>e.name===a?{...e,active:!e.active}:e))}),n=e=>console.table(e);a(e,"Mango").then(n),a(e,"Lux").then(n);
 },{}],"PbFG":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./task3"),require("./task1"),require("./task2");
-},{"./sass/main.scss":"clu1","./task3":"qhm1","./task1":"clu1","./task2":"clu1"}]},{},["PbFG"], null)
-//# sourceMappingURL=/goit-js-hw-11-promisification/promise.b64ab94a.js.map
+},{"./sass/main.scss":"clu1","./task3":"qhm1","./task1":"clu1","./task2":"F3LX"}]},{},["PbFG"], null)
+//# sourceMappingURL=/goit-js-hw-11-promisification/promise.e01215ae.js.map
