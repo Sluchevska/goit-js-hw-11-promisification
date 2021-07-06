@@ -1,8 +1,10 @@
 const delay = ms => {
   // Твой код
-    return new Promise((resolve) => {
+  const delay = 2000;
+  const isSuccess = true;
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
-       resolve
+       
         }, delay)
     })
 };
