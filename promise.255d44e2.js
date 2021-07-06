@@ -9,4 +9,4 @@ const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0
 },{}],"PbFG":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./task3"),require("./task1"),require("./task2");
 },{"./sass/main.scss":"clu1","./task3":"qhm1","./task1":"dAXG","./task2":"F3LX"}]},{},["PbFG"], null)
-//# sourceMappingURL=/goit-js-hw-11-promisification/promise.1ea100e7.js.map
+//# sourceMappingURL=/goit-js-hw-11-promisification/promise.255d44e2.js.map
