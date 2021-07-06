@@ -3,10 +3,10 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"qhm1":[function(require,module,exports) {
 const t=(t,n)=>Math.floor(Math.random()*(n-t+1)+t),n=n=>{const a=t(200,500);return new Promise((t,o)=>{setTimeout(()=>{Math.random()>.3?t({id:n.id,time:a}):o(n.id)},a)})},a=({id:t,time:n})=>{console.log(`Transaction ${t} processed in ${n}ms`)},o=t=>{console.warn(`Error processing transaction ${t}. Please try again later.`)};n({id:70,amount:150}).then(a).catch(o),n({id:71,amount:230}).then(a).catch(o),n({id:72,amount:75}).then(a).catch(o),n({id:73,amount:100}).then(a).catch(o);
 },{}],"dAXG":[function(require,module,exports) {
-const e=e=>new Promise(e=>{}),n=e=>console.log(`Resolved after ${e}ms`);e().then(n),e().then(n),e().then(n);
+const e=o=>new Promise(o=>{setTimeout(()=>{},e)}),o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(1e3).then(o),e(1500).then(o);
 },{}],"F3LX":[function(require,module,exports) {
 const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0},{name:"Lux",active:!1}],a=(e,a)=>new Promise(n=>{n(e.map(e=>e.name===a?{...e,active:!e.active}:e))}),n=e=>console.table(e);a(e,"Mango").then(n),a(e,"Lux").then(n);
 },{}],"PbFG":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./task3"),require("./task1"),require("./task2");
 },{"./sass/main.scss":"clu1","./task3":"qhm1","./task1":"dAXG","./task2":"F3LX"}]},{},["PbFG"], null)
-//# sourceMappingURL=/goit-js-hw-11-promisification/promise.4d7cdbe0.js.map
+//# sourceMappingURL=/goit-js-hw-11-promisification/promise.1ea100e7.js.map
