@@ -4,7 +4,11 @@ const delay = ms => {
   const isSuccess = true;
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-       
+        if (isSuccess) {
+          resolve(ms);
+        } else {
+          reject('Error')
+       }
         }, delay)
     })
 };
