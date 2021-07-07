@@ -1,16 +1,11 @@
 const delay = ms => {
   // Твой код
-  const delay = 2000;
-  const isSuccess = true;
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (isSuccess) {
-          resolve(ms);
-        } else {
-          reject('Error')
-       }
-        }, delay)
-    })
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+            resolve(ms)
+    }, ms)
+  })
 };
 
 const logger = time => console.log(`Resolved after ${time}ms`);
